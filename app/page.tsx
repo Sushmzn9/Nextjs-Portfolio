@@ -1,4 +1,5 @@
 import About from "@/Components/About";
+import Contact from "@/Components/Contact";
 import Header from "@/Components/Header";
 import Hero from "@/Components/Hero";
 import Projects from "@/Components/Projects";
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Header />
-      <section id="home" className="snap-start">
+      <section id="home" className="snap-center">
         <Hero />
       </section>
       <section id="about" className="snap-center">
@@ -23,6 +24,9 @@ export default function Home() {
       </section>
       <section className="snap-start" id="projects">
         <Projects />
+      </section>
+      <section className="snap-start" id="contact">
+        <Contact />
       </section>
     </div>
   );

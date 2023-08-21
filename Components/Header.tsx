@@ -55,12 +55,14 @@ function Header({}: Props) {
         transition={{
           duration: 100000,
         }}
-        className="flex flex-row items-center bg-gray-300 cursor-pointer"
+        className="flex flex-row items-center"
       >
         <SocialIcon
           className="cursor-pointer"
+          url="https://www.gmail.com"
           network="email"
           bg="transparent"
+          fgColor="gray"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
           Get in touch

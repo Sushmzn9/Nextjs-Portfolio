@@ -10,10 +10,11 @@ type Props = {};
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, I'm Sushan Maharjan",
+      "Hello",
+      "I'm Sushan Maharjan",
       "GuY-who-loves-Coffee.tsx",
       "<ButLovesToMakeNewFriends/>",
-      "More Thabn That He Loves To Code </>",
+      "ILoveToCode</>",
     ],
     loop: true,
     delaySpeed: 2000,
@@ -30,9 +31,9 @@ function Hero({}: Props) {
         <h2 className="pb-2 text-sm uppercase text-gray-500 tracking-[15px]">
           Software Developer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="text-2xl lg:text-6xl font-semibold px-10">
           <span>{text}</span>
-          <Cursor cursorColor="#F7ABA" />
+          <Cursor cursorColor="gold" />
         </h1>
         <div className="pt-5">
           <Link href="#about">
