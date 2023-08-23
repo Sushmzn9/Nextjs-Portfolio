@@ -20,7 +20,7 @@ const Projects = (props: Props) => {
       <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-2xl">
         Projects
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-z snap-mandatory z-20">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-z snap-mandatory  scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80 z-20">
         {projects.map((project, i) => (
           <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
             <motion.img
