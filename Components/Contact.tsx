@@ -24,12 +24,12 @@ const Contact = (props: Props) => {
       <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl text-center font-semibold">
+      <div className="flex flex-col top-26 mt-10 md:space-y-10">
+        <h4 className="text-lg md:text-3xl text-center font-semibold">
           I have got what you need.
           <span className="decoration-[#F7AB0A]/50 underline">Let's Talk</span>
         </h4>
-        <div className="space-y-10">
+        <div className="space-y-5 md:space-y-10">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-xl">123456789</p>
@@ -45,7 +45,7 @@ const Contact = (props: Props) => {
         </div>
       </div>
       <form
-        className="flex flex-col space-y-2 w-fit mx-auto"
+        className="flex flex-col space-y-2 md:w-fit mx-auto"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="flex space-x-2">

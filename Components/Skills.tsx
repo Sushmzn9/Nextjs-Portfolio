@@ -23,7 +23,7 @@ const Skills = (props: Props) => {
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
         Hover over a skill for currency profiency
       </h3>
-      <div className="grid grid-cols-3 gap-3 md:gap-5 md:grid-cols-4">
+      <div className="grid grid-cols-3 gap-2 md:gap-5 md:grid-cols-4">
         <Skill />
         <Skill />
         <Skill />

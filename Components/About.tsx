@@ -8,14 +8,12 @@ const About = (props: Props) => {
   return (
     <motion.div
       initial={{
-        x: -200,
         opacity: 0,
       }}
       transition={{
-        duration: 1.2,
+        duration: 1.5,
       }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
       className="flex max-w-7xl px-10 justify-evenly items-center relative flex-col h-screen md:text-left md:flex-row"
     >
       <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-xl md:text-2xl items-center">
@@ -36,7 +34,7 @@ const About = (props: Props) => {
       />
       <div className="space-y-2 px-0 md:px-10">
         <h4 className="text-2xl font-semibold">
-          Lorem ipsum dolor sit amet{" "}
+          Lorem ipsum dolor sit amet
           <span className="underline decoration-[#F7AB0A]">little</span>
         </h4>
         <p className="text-base">

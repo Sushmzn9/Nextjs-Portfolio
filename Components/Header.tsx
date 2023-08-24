@@ -3,6 +3,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 type Props = {};
 
 function Header({}: Props) {
@@ -31,7 +32,7 @@ function Header({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.twitter.com"
+          url="https://www.github.com"
           fgColor="gray"
           bgColor="transparent"
         />
@@ -53,7 +54,7 @@ function Header({}: Props) {
           scale: 1,
         }}
         transition={{
-          duration: 100000,
+          duration: 1,
         }}
         className="flex flex-row items-center"
       >
@@ -61,12 +62,14 @@ function Header({}: Props) {
           className="cursor-pointer"
           url="https://www.gmail.com"
           network="email"
-          bg="transparent"
+          bgColor="transparent"
           fgColor="gray"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
-          Get in touch
-        </p>
+        <Link href="#contact">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
+            Get in touch
+          </p>
+        </Link>
       </motion.div>
     </header>
   );
