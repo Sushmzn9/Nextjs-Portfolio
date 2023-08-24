@@ -29,7 +29,7 @@ const Projects = (props: Props) => {
                 opacity: 0,
               }}
               transition={{
-                duration: 1.2,
+                duration: 1,
               }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

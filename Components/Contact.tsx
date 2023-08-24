@@ -24,28 +24,27 @@ const Contact = (props: Props) => {
       <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col top-26 mt-10 md:space-y-10">
-        <h4 className="text-lg md:text-3xl text-center font-semibold">
-          I have got what you need.
-          <span className="decoration-[#F7AB0A]/50 underline">Let's Talk</span>
-        </h4>
-        <div className="space-y-5 md:space-y-10">
+      <div className="flex flex-col top-28 md:top-26 mt-10 space-y-10 ">
+        <p className="text-xl md:text-2xl text-center font-semibold mt-10 md:mt-2 mb-4">
+          I have got what you need. Let's Talk
+        </p>
+        <div className="space-y-6">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-xl">123456789</p>
+            <p className="text-lg">123456789</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-xl">Sushan.Maharjan18@gmail.com</p>
+            <p className="text-lg">Sushan.Maharjan18@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-xl">Sydeny</p>
+            <p className="text-lg">Sydeny</p>
           </div>
         </div>
       </div>
       <form
-        className="flex flex-col space-y-2 md:w-fit mx-auto"
+        className="flex flex-col space-y-2 md:mx-auto mt-0 m-10 "
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="flex space-x-2">
@@ -76,7 +75,7 @@ const Contact = (props: Props) => {
 
         <button
           type="submit"
-          className="bg-[#F7AB0A] py-5 rounded-md text-black font-bold text-lg"
+          className="bg-[#F7AB0A] py-2 md:py-4 rounded-md text-black font-bold text-lg"
         >
           Submit
         </button>

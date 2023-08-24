@@ -14,9 +14,9 @@ const About = (props: Props) => {
         duration: 1.5,
       }}
       whileInView={{ opacity: 1 }}
-      className="flex max-w-7xl px-10 justify-evenly items-center relative flex-col h-screen md:text-left md:flex-row"
+      className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-xl md:text-2xl items-center">
+      <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-2xl">
         About
       </h3>
       <motion.img
