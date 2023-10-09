@@ -21,7 +21,7 @@ const ExperienceCard = (props: Props) => {
       />
       <div className="px-0 md:px-10">
         <h4 className="text-xl md:text-3xl font-light">Travelex</h4>
-        <p className="font-bold text-xl mt-1">Sushna</p>
+        <p className="font-bold text-xl mt-1">Sushan</p>
         <div className="flex space-x-2 my-2">
           {/* tech used */}
           <img className="h-10 w-10 rounded-full" src="" alt="" />
