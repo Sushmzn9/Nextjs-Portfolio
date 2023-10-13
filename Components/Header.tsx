@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import resume from "./assets/resume.pdf";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -56,19 +57,25 @@ function Header({}: Props) {
         transition={{
           duration: 1,
         }}
-        className="flex flex-row items-center"
+        className="flex flex-row gap-3 items-center"
       >
-        <SocialIcon
-          className="cursor-pointer"
-          url="https://www.gmail.com"
-          network="email"
-          bgColor="transparent"
-          fgColor="gray"
-        />
         <Link href="#contact">
+          <SocialIcon
+            className="cursor-pointer"
+            url="https://www.gmail.com"
+            network="email"
+            bgColor="transparent"
+            fgColor="gray"
+          />
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
             Get in touch
           </p>
+        </Link>
+
+        <Link href={resume}>
+          <button className="uppercase rounded bg-[#F7AB0A] text-black md:inline-flex p-2 text-sm">
+            Download CV
+          </button>
         </Link>
       </motion.div>
     </header>
