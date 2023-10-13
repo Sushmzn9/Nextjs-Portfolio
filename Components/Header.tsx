@@ -27,11 +27,6 @@ function Header({}: Props) {
       >
         {/* social icons */}
         <SocialIcon
-          url="https://www.facebook.com"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
           url="https://www.github.com"
           fgColor="gray"
           bgColor="transparent"
@@ -41,6 +36,11 @@ function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
+        <Link href="/resume.pdf" target="/">
+          <button className="uppercase hover:opacity-50 font-bold rounded bg-[#F7AB0A] text-black md:inline-flex p-2 text-sm">
+            Download CV
+          </button>
+        </Link>
       </motion.div>
       <motion.div
         initial={{
@@ -69,12 +69,6 @@ function Header({}: Props) {
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
             Get in touch
           </p>
-        </Link>
-
-        <Link href="/resume.pdf" target="/">
-          <button className="uppercase rounded bg-[#F7AB0A] text-black md:inline-flex p-2 text-sm">
-            Download CV
-          </button>
         </Link>
       </motion.div>
     </header>

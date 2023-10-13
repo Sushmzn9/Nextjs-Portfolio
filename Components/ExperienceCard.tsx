@@ -35,7 +35,7 @@ const ExperienceCard = (props: Props) => {
         ({ companyName, techStack, src, date, li, li2, li3, li4 }) => (
           <article
             key={companyName}
-            className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 curosr-pointer transition-opacity duration-200 overflow-hidden"
+            className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden"
           >
             <motion.img
               initial={{
@@ -47,14 +47,16 @@ const ExperienceCard = (props: Props) => {
               }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="w-30 h-20 rounded-full md:rounded-full xl:w-[100px] xl:h-[100px] object-contain object-center"
+              className="w-20 h-20 rounded-full md:rounded-full xl:w-[100px] xl:h-[100px] object-contain object-center"
               src={src}
               alt=""
             />
             <div className="px-0 md:px-10">
-              <h4 className="text-xl md:text-3xl font-light">{companyName}</h4>
-              <p className="font-bold text-xl  mt-3">FULL STACK DEVELOPER</p>
-              <div className="flex space-x-2 justify-center items-center my-2">
+              <h4 className="text-lg md:text-xl font-light">
+                {companyName.toUpperCase()}
+              </h4>
+              <p className="font-bold text-xl">FULL STACK DEVELOPER</p>
+              <div className="flex space-x-1 justify-center items-center my-2">
                 <img
                   src={techStack}
                   alt={companyName}
@@ -62,10 +64,10 @@ const ExperienceCard = (props: Props) => {
                   rounded-full object-center object-contain"
                 />
               </div>
-              <p className="uppercase py-5 text-gray-300">
+              <p className="uppercase text-sm py-2 text-gray-300">
                 started work : {date}
               </p>
-              <ul className="list-disc space-y-4 ml-5 text-lg">
+              <ul className="list-disc space-y-2 ml-5 text-sm">
                 <li>{li}</li>
                 <li>{li2}</li>
                 <li>{li3}</li>

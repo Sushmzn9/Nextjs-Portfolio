@@ -23,7 +23,7 @@ const Skills = (props: Props) => {
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm text-center">
         Hover over a skill for currency profiency
       </h3>
-      <div className="grid grid-cols-1 gap-2">
+      <div className="mt-5">
         <Skill />
       </div>
     </motion.div>
