@@ -38,7 +38,7 @@ function Hero({}: Props) {
         </h1>
         <div className="pt-5">
           {navLabel.map((label) => (
-            <Link key={label} href={`#` + `${label}`}>
+            <Link key={label} href={`#` + `${label.toLowerCase()}`}>
               <button className="heroButton">{label}</button>
             </Link>
           ))}

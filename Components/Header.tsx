@@ -71,7 +71,7 @@ function Header({}: Props) {
           </p>
         </Link>
 
-        <Link href="/resume.pdf">
+        <Link href="/resume.pdf" target="/">
           <button className="uppercase rounded bg-[#F7AB0A] text-black md:inline-flex p-2 text-sm">
             Download CV
           </button>
