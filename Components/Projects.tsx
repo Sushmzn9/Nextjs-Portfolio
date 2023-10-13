@@ -35,6 +35,7 @@ const Projects = (props: Props) => {
               viewport={{ once: true }}
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnDq0siwg1PcgQ-hQmcbdqoHbbsINPf-XRw&usqp=CAU"
               alt=""
+              key={i}
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-2xl font-semibold text-center">

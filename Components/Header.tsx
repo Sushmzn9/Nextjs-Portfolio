@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import resume from "./assets/resume.pdf";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -72,7 +71,7 @@ function Header({}: Props) {
           </p>
         </Link>
 
-        <Link href={resume}>
+        <Link href="/resume.pdf">
           <button className="uppercase rounded bg-[#F7AB0A] text-black md:inline-flex p-2 text-sm">
             Download CV
           </button>
