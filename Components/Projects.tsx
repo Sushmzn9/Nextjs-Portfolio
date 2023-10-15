@@ -35,7 +35,7 @@ const Projects = (props: Props) => {
       </h3>
       <div className="relative mx-auto w-full flex overflow-x-scroll overflow-y-hidden snap-z snap-mandatory  scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80 z-20">
         {projects.map(({ Name, p, src }, i) => (
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-centerp-20 h-screen p-4">
+          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center p-8 h-screen">
             <motion.img
               initial={{
                 y: -300,
@@ -49,7 +49,7 @@ const Projects = (props: Props) => {
               src={src}
               alt=""
               key={i}
-              className="w-1/2 h-1/2 object-contain rounded-lg cursor-pointer object-center"
+              className=" object-contain rounded-lg cursor-pointer object-center"
             />
             <div className="space-y-2 px-0 md:px-10">
               <h4 className="text-sm font-semibold text-center">

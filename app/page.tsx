@@ -1,4 +1,6 @@
 import About from "@/Components/About";
+import Head from "next/head";
+
 import Contact from "@/Components/Contact";
 import Header from "@/Components/Header";
 import Hero from "@/Components/Hero";
