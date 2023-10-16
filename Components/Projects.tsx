@@ -37,7 +37,7 @@ const Projects = (props: Props) => {
         {projects.map(({ Name, p, src }, i) => (
           <div
             key={Name}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center p-8 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center p-8"
           >
             <motion.img
               initial={{
@@ -48,11 +48,10 @@ const Projects = (props: Props) => {
                 duration: 1,
               }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               src={src}
               alt=""
               key={i}
-              className=" object-contain rounded-lg cursor-pointer object-center"
+              className="object-contain rounded-lg md:w-1/2 cursor-pointer object-center"
             />
             <div className="space-y-2 px-0 md:px-10">
               <h4 className="text-sm font-semibold text-center">
