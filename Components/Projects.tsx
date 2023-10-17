@@ -41,7 +41,7 @@ const Projects = (props: Props) => {
           >
             <motion.img
               initial={{
-                y: -300,
+                y: 200,
                 opacity: 0,
               }}
               transition={{
@@ -51,7 +51,7 @@ const Projects = (props: Props) => {
               src={src}
               alt=""
               key={i}
-              className="object-contain rounded-lg md:w-1/2 cursor-pointer object-center"
+              className="object-contain rounded-lg cursor-pointer object-center"
             />
             <div className="space-y-2 px-0 md:px-10">
               <h4 className="text-sm font-semibold text-center">
