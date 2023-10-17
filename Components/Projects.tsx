@@ -51,7 +51,7 @@ const Projects = (props: Props) => {
               src={src}
               alt=""
               key={i}
-              className="object-contain rounded-lg cursor-pointer object-center"
+              className="object-contain rounded-lg cursor-pointer w-[400px] object-center"
             />
             <div className="space-y-2 px-0 md:px-10">
               <h4 className="text-sm font-semibold text-center">
