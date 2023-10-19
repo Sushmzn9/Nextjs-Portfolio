@@ -34,7 +34,7 @@ const ExperienceCard = (props: Props) => {
         ({ companyName, techStack, src, date, li, li2, li3, li4 }) => (
           <article
             key={companyName}
-            className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] p-8 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden"
+            className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] p-5 md:p-8 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden"
           >
             <motion.img
               initial={{
@@ -45,7 +45,6 @@ const ExperienceCard = (props: Props) => {
                 duration: 1.2,
               }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               className="w-20 h-20 rounded-full md:rounded-full xl:w-[100px] xl:h-[100px] object-contain object-center"
               src={src}
               alt=""

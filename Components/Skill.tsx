@@ -34,7 +34,7 @@ const Skill = ({ directionLeft }: Props) => {
           transition={{ duration: 0.6 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="group relative flex cursor-pointer"
+          className="group  relative flex cursor-pointer"
         >
           <img
             src={skill}
