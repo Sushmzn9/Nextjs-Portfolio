@@ -28,10 +28,10 @@ const Skill = ({ directionLeft }: Props) => {
         <motion.div
           key={skill}
           initial={{
-            x: directionLeft ? -50 : 50,
+            x: directionLeft ? -100 : 100,
             opacity: 0,
           }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="group relative flex cursor-pointer"

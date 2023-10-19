@@ -31,7 +31,7 @@ const About = () => {
         className="mt-20 mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover md:rounded-lg md:w-64 md:h-[17rem] xl:w-[500px] xl:h-[500px]"
         alt="Profile"
       />
-      <div className="space-y-2 px-0 md:px-8">
+      <div className="space-y-1 mt-0 px-0 md:px-8">
         <h2 className="text-2xl font-semibold text-center">
           Full Stack Developer
         </h2>

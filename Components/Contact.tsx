@@ -55,13 +55,10 @@ const Contact = (props: Props) => {
       <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col justify-evenly items-center top-28 md:top-26 mt-10 space-y-10 p-4">
-        <span className="text-2xl text-center md:text-2xl font-bold mt-10 md:mt-2 font-serif">
-          Let's get connected here:
-        </span>
+      <div className="flex flex-col justify-evenly items-center mt-10 space-y-10 p-4">
         <div className="space-y-3">
           {contactInfoList.map((contact, index) => (
-            <div key={index} className="flex space-x-5">
+            <div key={index} className="flex space-x-5  items-start">
               <span>{contact.icon}</span>
               <p className="text-l font-serif font-bold">{contact.text}</p>
             </div>

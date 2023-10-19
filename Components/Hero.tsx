@@ -12,16 +12,15 @@ function Hero({}: Props) {
     words: [
       "Hello",
       "I'm Sushan Maharjan",
-      "GuY-who-loves-Coffee.tsx",
-      "<ButLovesToMakeNewFriends/>",
       "ILoveToCode</>",
+      "<ButLovesToMakeNewFriends/>",
     ],
     loop: true,
     delaySpeed: 2000,
   });
   const navLabel = ["About", "Experience", "Skills", "Projects"];
   return (
-    <div className="h-screen flex space-y-8 flex-col items-center overflow-hidden text-center justify-center ">
+    <div className="h-screen flex space-y-8 flex-col items-center overflow-hidden text-center justify-center">
       <BackgroundCircle />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
