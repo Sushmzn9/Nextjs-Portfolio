@@ -9,8 +9,8 @@ const Projects = (props: Props) => {
   const projects = [
     {
       name: "Ecommerce CMS",
-      src: "https://media.licdn.com/dms/image/D562DAQEH0ddSTXeMLA/profile-treasury-image-shrink_800_800/0/1696649334137?e=1697817600&v=beta&t=pCB9vvW1n4oNQqOGucdPuEfLk7A8CNVGHryeNWTlyE8",
-      p: "Built Ecommerce CMS with MERN stack, deployed on AWS forscalability and reliability. Test Now => Email: test@00.com Password : 123456",
+      src: " /assets/Ecommerce-CMS.jpeg",
+      p: "Built Ecommerce CMS with MERN stack, deployed on AWS for scalability and reliability. Test Now => Email: test@00.com Password : 123456",
       webLink:
         "http://ecommerce-cms-frontend.s3-website-ap-southeast-2.amazonaws.com/",
       codeLink: "https://github.com/Sushmzn9/e_commerce-cms",
@@ -20,7 +20,7 @@ const Projects = (props: Props) => {
       webLink:
         "http://customer-store-frontend.s3-website-ap-southeast-2.amazonaws.com/",
       codeLink: "https://github.com/Sushmzn9/Customer-Front-Store",
-      src: "/assets/TechStore.png",
+      src: "/assets/TechStore.jpeg",
       p: "Built an online store with a shopping cart, Stripe payments, and secure user authentication using the MERN stack",
     },
   ];
@@ -68,16 +68,26 @@ const Projects = (props: Props) => {
               </h4>
               <p className="text-sm text-center md:text-left">{p}</p>
             </div>
-            <div className="flex flex-row gap-2">
-              <Link href={codeLink} target="_blank">
-                <button className="border cursor-pointer p-2 bg-slate-600 rounded">
-                  Code Here
-                </button>
+            <div className="flex flex-row pt-5 gap-4">
+              <Link
+                href={codeLink}
+                target="_blank"
+                className="relative px-6  py-3 font-bold text-white group"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full border-4 border-white"></span>
+                <span className="relative">Code Here</span>
               </Link>
-              <Link href={webLink} target="_blank">
-                <button className="border cursor-pointer p-2 bg-white text-black rounded">
+              <Link
+                href={webLink}
+                target="_blank"
+                className="relative inline-block px-4 py-2 font-medium group"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-red-600 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-white group-hover:bg-red-600"></span>
+                <span className="relative text-black group-hover:text-white">
                   Website Link
-                </button>
+                </span>
               </Link>
             </div>
           </div>
