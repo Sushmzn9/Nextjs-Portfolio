@@ -20,7 +20,7 @@ const WorkExperience = (props: Props) => {
       <h3 className="absolute top-24 uppercase text-gray-500 tracking-[20px] text-2xl">
         Experience
       </h3>
-      <div className="w-screen flex space-x-5 overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 p-4 snap-x snap-mandatory mt-2 md:mt-40">
+      <div className="w-screen flex space-x-5 overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 p-4 pt-20 snap-x snap-mandatory">
         <ExperienceCard />
       </div>
     </motion.div>
