@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Sushan from "../public/assets/sushan-pp.jpeg";
 
 const About = () => {
   return (
@@ -27,7 +28,7 @@ const About = () => {
         }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        src="https://scontent.fbne10-1.fna.fbcdn.net/v/t1.6435-9/131762545_3267486333363335_7468727792312820782_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=sUB6bKmj1V8AX9PXdsM&_nc_ht=scontent.fbne10-1.fna&oh=00_AfDCvrHZj9fdzNonj4gA9pny5__LrolANjkfyizZ7dNTOA&oe=654B4E14"
+        src="/assets/sushan-pp.jpeg"
         className="mt-20 mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover md:rounded-lg md:w-64 md:h-[17rem] xl:w-[500px] xl:h-[500px]"
         alt="Profile"
       />

@@ -8,6 +8,12 @@ type Props = {};
 const Projects = (props: Props) => {
   const projects = [
     {
+      name: "Beauty.Peaks",
+      src: " /assets/beauty.peaks.jpeg",
+      p: "Eyelash Extension Booking Website build using Typescript, Tailwind CSS and Nextjs",
+      webLink: "https://www.cheligauchan.com.np/",
+    },
+    {
       name: "Ecommerce CMS",
       src: " /assets/Ecommerce-CMS.jpeg",
       p: "Built Ecommerce CMS with MERN stack, deployed on AWS for scalability and reliability. Test Now => Email: test@00.com Password : 123456",
@@ -58,7 +64,7 @@ const Projects = (props: Props) => {
               src={src}
               alt={name}
               key={i}
-              className="object-contain rounded-lg cursor-pointer w-[400px] object-center"
+              className="object-contain rounded-lg cursor-pointer w-full md:w-[400px] object-center"
             />
             <div className="space-y-2 px-0 pt-6 md:px-10">
               <h4 className="text-sm font-semibold text-center">
@@ -69,15 +75,18 @@ const Projects = (props: Props) => {
               <p className="text-sm text-center md:text-left">{p}</p>
             </div>
             <div className="flex flex-row pt-5 gap-4">
-              <Link
-                href={codeLink}
-                target="_blank"
-                className="relative px-6  py-3 font-bold text-white group"
-              >
-                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full border-4 border-white"></span>
-                <span className="relative">Code Here</span>
-              </Link>
+              {codeLink && (
+                <Link
+                  href={codeLink}
+                  target="_blank"
+                  className="relative px-6 py-3 font-bold text-white group"
+                >
+                  <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                  <span className="absolute inset-0 w-full h-full border-4 border-white"></span>
+                  <span className="relative">Code Here</span>
+                </Link>
+              )}
+
               <Link
                 href={webLink}
                 target="_blank"
