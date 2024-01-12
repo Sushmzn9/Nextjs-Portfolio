@@ -19,7 +19,7 @@ function Hero({}: Props) {
       <BackgroundCircle />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://media.licdn.com/dms/image/D5603AQH759IX5d4iGA/profile-displayphoto-shrink_200_200/0/1679713206470?e=1702512000&v=beta&t=AbyPoLHu7uEgZERmW3pSZLq1kU58D3meoI2qOGQOn2Q"
+        src="/assets/sushan-dp.jpeg"
         alt=""
       />
       <div className="z-20">
